@@ -1,0 +1,72 @@
+@article{VANDENBOGAERDT2018616,
+title = {Multi-machine scheduling lower bounds using decision diagrams},
+journal = {Operations Research Letters},
+volume = {46},
+number = {6},
+pages = {616-621},
+year = {2018},
+issn = {0167-6377},
+doi = {https://doi.org/10.1016/j.orl.2018.11.003},
+url = {https://www.sciencedirect.com/science/article/pii/S016763771830227X},
+html = {https://www.sciencedirect.com/science/article/pii/S016763771830227X},
+author = {Pim {van den Bogaerdt} and Mathijs {de Weerdt}},
+keywords = {Multi-machine scheduling, Lower bounds, Decision diagrams},
+abstract = {We consider parallel multi-machine scheduling with due times, where a partition of jobs is given where jobs in the same partition have a common release time, possibly precedence constraints, and cannot overlap. A formulation of decision diagrams for this problem greatly improves upon a more natural extension of the state-of-the-art for single-machine scheduling, and can provide decent lower bounds, outperforming existing solvers given the same short runtime limit, for problem instances with large time scales and tight due times.}
+}
+
+@InProceedings{10.1007/978-3-540-74970-7_11,
+author="Andersen, H. R.
+and Hadzic, T.
+and Hooker, J. N.
+and Tiedemann, P.",
+editor="Bessi{\`e}re, Christian",
+title="A Constraint Store Based on Multivalued Decision Diagrams",
+booktitle="Principles and Practice of Constraint Programming -- CP 2007",
+year="2007",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="118--132",
+abstract="The typical constraint store transmits a limited amount of information because it consists only of variable domains. We propose a richer constraint store in the form of a limited-width multivalued decision diagram (MDD). It reduces to a traditional domain store when the maximum width is one but allows greater pruning of the search tree for larger widths. MDD propagation algorithms can be developed to exploit the structure of particular constraints, much as is done for domain filtering algorithms. We propose specialized propagation algorithms for alldiff and inequality constraints. Preliminary experiments show that MDD propagation solves multiple alldiff problems an order of magnitude more rapidly than traditional domain propagation. It also significantly reduces the search tree for inequality problems, but additional research is needed to reduce the computation time.",
+isbn="978-3-540-74970-7",
+html="https://link.springer.com/chapter/10.1007/978-3-540-74970-7_11"
+}
+
+@InProceedings{10.1007/978-3-030-19212-9_38,
+author="van den Bogaerdt, Pim
+and de Weerdt, Mathijs",
+editor="Rousseau, Louis-Martin
+and Stergiou, Kostas",
+title="Lower Bounds for Uniform Machine Scheduling Using Decision Diagrams",
+booktitle="Integration of Constraint Programming, Artificial Intelligence, and Operations Research",
+year="2019",
+publisher="Springer International Publishing",
+address="Cham",
+pages="565--580",
+abstract="We propose a relaxed decision diagram (DD) formulation for obtaining lower bounds on uniform machine scheduling instances, based on separators to separate jobs on different machines. Experiments on the total tardiness for instances with tight due times show that for obtaining nontrivial bounds, it is important to partition the DD nodes on a layer based on their machine finishing time. When the number of jobs is small, DDs provide stronger bounds in less time than a time-indexed LP relaxation.",
+isbn="978-3-030-19212-9",
+html="https://link.springer.com/chapter/10.1007/978-3-030-19212-9_38"
+}
+
+@article{doi:10.1287/opre.2013.1221,
+author = {Cire, Andre A. and van Hoeve, Willem-Jan},
+title = {Multivalued Decision Diagrams for Sequencing Problems},
+journal = {Operations Research},
+volume = {61},
+number = {6},
+pages = {1411-1428},
+year = {2013},
+doi = {10.1287/opre.2013.1221},
+URL = { 
+        https://doi.org/10.1287/opre.2013.1221
+},
+html = { 
+        https://doi.org/10.1287/opre.2013.1221
+},
+eprint = { 
+        https://doi.org/10.1287/opre.2013.1221
+},
+    abstract = { Sequencing problems are among the most prominent problems studied in operations research, with primary application in, e.g., scheduling and routing. We propose a novel approach to solving generic sequencing problems using multivalued decision diagrams (MDDs). Because an MDD representation may grow exponentially large, we apply MDDs of limited size as a discrete relaxation to the problem. We show that MDDs can be used to represent a wide range of sequencing problems with various side constraints and objective functions, and we demonstrate how MDDs can be added to existing constraint-based scheduling systems. Our computational results indicate that the additional inference obtained by our MDDs can speed up a state-of-the art solver by several orders of magnitude, for a range of different problem classes. }
+}
+
+
+

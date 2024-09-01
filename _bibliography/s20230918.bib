@@ -1,0 +1,78 @@
+@InProceedings{10.1007/11963578_6,
+author="Schutt, Andreas
+and Wolf, Armin
+and Schrader, Gunnar",
+editor="Umeda, Masanobu
+and Wolf, Armin
+and Bartenstein, Oskar
+and Geske, Ulrich
+and Seipel, Dietmar
+and Takata, Osamu",
+html={https://link.springer.com/chapter/10.1007/11963578_6},
+title="Not-First and Not-Last Detection for Cumulative Scheduling in {\$}{\{}{\backslash}cal O{\}}(n^3{\backslash}log n){\$}",
+booktitle="Declarative Programming for Knowledge Management",
+year="2006",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="66--80",
+abstract="Not-first/not-last detection is the pendant of edge-finding in constraint-based disjunctive and cumulative scheduling. Both methods provide strong pruning algorithms in constraint programming. This paper shows that the not-first/not-last detection algorithm presented by Nuijten that runs in time {\$}{\{}{\backslash}cal O{\}}(n^3k){\$}is incorrect and incomplete, where n is the number of tasks and k is the number of different capacity requirements of these tasks. A new correct and complete detection algorithm for cumulative scheduling is then presented which runs in {\$}{\{}{\backslash}cal O{\}}(n^3{\backslash}log n){\$}.",
+isbn="978-3-540-69234-8"
+}
+
+@InProceedings{10.1007/978-3-319-93031-2_34,
+author="Ouellet, Yanick
+and Quimper, Claude-Guy",
+editor="van Hoeve, Willem-Jan",
+title="A {\$}{\$}O(n {\backslash}log ^2 n){\$}{\$}Checker and {\$}{\$}O(n^2 {\backslash}log n){\$}{\$}Filtering Algorithm for the Energetic Reasoning",
+booktitle="Integration of Constraint Programming, Artificial Intelligence, and Operations Research",
+year="2018",
+publisher="Springer International Publishing",
+html={https://link.springer.com/chapter/10.1007/978-3-319-93031-2_34},
+address="Cham",
+pages="477--494",
+abstract="Energetic reasoning is a strong filtering technique for the Cumulative constraint. However, the best algorithms process {\$}{\$}O(n^2){\$}{\$}time intervals to perform the satisfiability check which makes it too costly to use in practice. We present how to apply the energetic reasoning by processing only {\$}{\$}O(n {\backslash}log n){\$}{\$}intervals. We show how to compute the energy in an interval in {\$}{\$}O({\backslash}log n){\$}{\$}time. This allows us to propose a {\$}{\$}O(n {\backslash}log ^2 n){\$}{\$}checker and a filtering algorithm for the energetic reasoning with {\$}{\$}O(n^2 {\backslash}log n){\$}{\$}average time complexity. Experiments show that these two algorithms outperform their state of the art counterparts.",
+isbn="978-3-319-93031-2"
+}
+
+@InProceedings{10.1007/3-540-46135-3_5,
+author="Beldiceanu, Nicolas
+and Carlsson, Mats",
+editor="Van Hentenryck, Pascal",
+title="A New Multi-resource cumulatives Constraint with Negative Heights",
+html={https://link.springer.com/chapter/10.1007/3-540-46135-3_5},
+booktitle="Principles and Practice of Constraint Programming - CP 2002",
+year="2002",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="63--79",
+abstract="This paper presents a new cumulatives constraint, which generalizes the original cumulative constraint in different ways. The two most important aspects consist in permitting multiple cumulative resources as well as negative heights for the resource consumption of the tasks. This allows modeling in an easy way workload covering, producer-consumer, and scheduling problems. The introduction of negative heights has forced us to come up with new filtering algorithms and to revisit existing ones. The first filtering algorithm is derived from an idea called sweep, which is extensively used in computational geometry; the second algorithm is based on a combination of sweep and constructive disjunction; while the last is a generalization of task intervals to this new context. A real-life crew scheduling problem originally motivated this constraint which was implemented within the SICStus finite domain solver and evaluated against different problem patterns.",
+isbn="978-3-540-46135-7"
+}
+
+
+@article{doi:10.1287/ijoc.1070.0226,
+author = {Mercier, Luc and Van Hentenryck, Pascal},
+title = {Edge Finding for Cumulative Scheduling},
+html = {https://pubsonline.informs.org/doi/10.1287/ijoc.1070.0226},
+journal = {INFORMS Journal on Computing},
+volume = {20},
+number = {1},
+pages = {143-153},
+year = {2008},
+doi = {10.1287/ijoc.1070.0226},
+URL = { 
+        https://doi.org/10.1287/ijoc.1070.0226
+},
+eprint = { 
+        https://doi.org/10.1287/ijoc.1070.0226
+},
+    abstract = { The introduction of edge-finding techniques was a significant development in constraint-based scheduling. Today, edge finders are still the state of the art in the disjunctive case and a technique of interest in cumulative scheduling. This paper reconsiders edge-finding algorithms for cumulative scheduling and shows that Nuijten's edge finder, and its derivatives, are incomplete because they use an invalid dominance rule. We then present a correct cumulative edge finder running in time O(n2k), where n is the number of tasks and k the number of different capacity requirements of the tasks. The new algorithm is organized in two phases and first uses dynamic programming to precompute the innermost maximization in the edge-finder specification. The paper also proposes the first extended edge-finding algorithms that run in time O(n2k), improving the running time of available algorithms. Finally, the paper discusses how to speed up the algorithm in practice and how the first phase can be used to improve algorithms based on energetic reasoning. }
+}
+
+@phdthesis{schutt_thesis,
+  author       = {Andreas Schutt}, 
+  title        = {Improving scheduling by learning},
+  school       = {Department of Computer Science and Software Engineering, The University of Melbourne},
+  year         = 2011,
+  html = {https://minerva-access.unimelb.edu.au/items/fe4825ac-cd4a-582c-bacc-d4ae384f3f76},
+}

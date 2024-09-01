@@ -1,0 +1,55 @@
+@phdthesis{schutt_thesis,
+  author       = {Andreas Schutt}, 
+  title        = {Improving scheduling by learning},
+  school       = {Department of Computer Science and Software Engineering, The University of Melbourne},
+  year         = 2011,
+  html = {https://minerva-access.unimelb.edu.au/items/fe4825ac-cd4a-582c-bacc-d4ae384f3f76},
+}
+
+@InProceedings{10.1007/978-3-642-38171-3_16,
+author="Schutt, Andreas
+and Feydy, Thibaut
+and Stuckey, Peter J.",
+editor="Gomes, Carla
+and Sellmann, Meinolf",
+title="Explaining Time-Table-Edge-Finding Propagation for the Cumulative Resource Constraint",
+booktitle="Integration of AI and OR Techniques in Constraint Programming for Combinatorial Optimization Problems",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="234--250",
+abstract="Cumulative resource constraints can model scarce resources in scheduling problems or a dimension in packing and cutting problems.In order to efficiently solve such problems with a constraint programming solver, it is important to have strong and fast propagators for cumulative resource constraints. Time-table-edge-finding propagators are a recent development in cumulative propagators, that combine the current resource profile (time-table) during the edge-finding propagation. The current state of the art for solving scheduling and cutting problems involving cumulative constraints are lazy clause generation solvers, i.e., constraint programming solvers incorporating nogood learning, have proved to be excellent at solving scheduling and cutting problems. For such solvers, concise and accurate explanations of the reasons for propagation are essential for strong nogood learning. In this paper, we develop a time-table-edge-finding propagator for cumulative that explains its propagations. We give results using this propagator in a lazy clause generation system on resource-constrained project scheduling problems from various standard benchmark suites. On the standard benchmark suite PSPLib, we are able to improve the lower bound of about 60{\%} of the remaining open instances, and close 6 open instances.",
+isbn="978-3-642-38171-3",
+html = {https://link.springer.com/chapter/10.1007/978-3-642-38171-3_16}
+}
+
+@InProceedings{10.1007/978-3-642-21311-3_22,
+author="Vil{\'i}m, Petr",
+editor="Achterberg, Tobias
+and Beck, J. Christopher",
+title="Timetable Edge Finding Filtering Algorithm for Discrete Cumulative Resources",
+booktitle="Integration of AI and OR Techniques in Constraint Programming for Combinatorial Optimization Problems",
+year="2011",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="230--245",
+abstract="Edge Finding filtering algorithm is one of the reasons why Constraint Programming is a successful approach in the scheduling domain. However edge finding for cumulative resources was never as successful as edge finding for disjunctive resources. This paper presents a new variant of the edge finding algorithm which improves filtering by taking into account minimum capacity profile - a data structure known from timetabling algorithm. In comparison with standard and extended edge finding algorithms the new algorithm is stronger but it may need more iterations in order to reach the fixpoint. Time complexity of the algorithm is {\$}{\backslash}mathcal{\{}O{\}}(n^{\{}2{\}}){\$}where n is number of activities on the resource. We also propose further improvement of the filtering by incorporating some ideas from not-first/not-last and energetic reasoning algorithms. The filtering power of the algorithm is tested on computation of destructive lower bounds for 438 open RCPSP problems. For 169 of them we improve current best lower bound, in 9 cases backtrack free.",
+isbn="978-3-642-21311-3",
+html="https://link.springer.com/chapter/10.1007/978-3-642-21311-3_22"
+}
+
+@InProceedings{10.1007/978-3-642-04244-7_29,
+author="Feydy, Thibaut
+and Stuckey, Peter J.",
+editor="Gent, Ian P.",
+title="Lazy Clause Generation Reengineered",
+booktitle="Principles and Practice of Constraint Programming - CP 2009",
+year="2009",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="352--366",
+abstract="Lazy clause generation is a powerful hybrid approach to combinatorial optimization that combines features from SAT solving and finite domain (FD) propagation. In lazy clause generation finite domain propagators are considered as clause generators that create a SAT description of their behaviour for a SAT solver. The ability of the SAT solver to explain and record failure and perform conflict directed backjumping are then applicable to FD problems. The original implementation of lazy clause generation was constructed as a cut down finite domain propagation engine inside a SAT solver. In this paper we show how to engineer a lazy clause generation solver by embedding a SAT solver inside an FD solver. The resulting solver is flexible, efficient and easy to use. We give experiments illustrating the effect of different design choices in engineering the solver.",
+isbn="978-3-642-04244-7",
+html="https://link.springer.com/chapter/10.1007/978-3-642-04244-7_29"
+}
+
