@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+
+<p><i>Session date:</i> {{ page.date | date: "%-d %B %Y" }}</p>
+<p><i>Session host:</i> <a href="{{ page.host_ref }}">{{ page.host }}</a></p>
+
+<p><i>Summary:</i> {{ page.content }}</p>
+
+{% if page.related_papers %}
+<h2>Relevant papers</h2>
+<div class="publications">
+  {% bibliography --group_by none --file {{ page.related_papers }} %}
+</div>
+{% endif %}

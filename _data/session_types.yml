@@ -1,0 +1,19 @@
+paper:
+  display: Paper review
+  css-class: session-paper-review
+  icon-class: "fa-solid fa-book"
+
+research:
+  display: Ongoing research
+  css-class: session-research
+  icon-class: "fa-solid fa-flask"
+
+brainstorm:
+  display: Brainstorm
+  css-class: session-brainstorm
+  icon-class: "fa-solid fa-brain"
+
+digest:
+  display: Digest
+  css-class: session-digest
+  icon-class: "fa-solid fa-radio"

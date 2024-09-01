@@ -1,80 +1,97 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<main role="main">
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-3">Monday's Outstanding Orations</h1>
+      <p>Focused, technical, weekly reading group on combinatorial optimization and related topics at TU Delft.</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="{{ '/agenda' | relative_url }}" role="button">See the upcoming sessions</a>
+        <a class="btn btn-success btn-lg" href="https://forms.gle/kQy7pNfingDq5wQ48" role="button">I want to give a talk</a>
+      </p>
+    </div>
+  </div>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+  <div class="row">
+    <div id="benefits" class="container text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <h2> <i class="fa-solid fa-building-columns"></i> We speak model-and-solve</h2>
+          <p>Are you working with constraint satisfaction, SAT solving, mixed-integer programming, or any other related framework? We discuss these topics regularly, and many of us are actively involved in a relevant research. </p>
+        </div>
+        <div class="col-md-6">
+          <h2> <i class="fa-solid fa-bolt"></i> Focused discussions</h2>
+          <p>We do not segregate the presentation time and audience time: <b>attendees are free to ask questions at any time</b>. Sounds interesting? Then prepare about 20 minutes of the content, and we will support the discussion for the rest of the meeting! </p>
+        </div>
       </div>
-    {% endif %}
+      <hr>
+    </div>
+  </div>
 
-    <div class="clearfix">{{ content }}</div>
+  <!-- <h2 class="display-4 text-center">Testimonials</h2> -->
+  <!-- <div id="testimonials" class="carousel slide h-25" data-bs-ride="carousel"> -->
+  <!--   <div class="carousel-inner"> -->
+  <!--     <div class="carousel-item text-center p-4 container active"> -->
+  <!--       <div class="row align-items-center"> -->
+  <!--         <div class="col-md-2"> -->
+  <!--           <img src="./landing_files/testimonials-maarten-flippo.jpg"> -->
+  <!--         </div> -->
+  <!--         <div class="col"> -->
+  <!--           <p>CP 2024 good</p> -->
+  <!--           <h3>Maarten Flippo</h3> -->
+  <!--           <footer> -->
+  <!--             <p>PhD candidate, TU Delft</p> -->
+  <!--             <a href="https://maartenflippo.com/" class="btn btn-outline-primary"> <i class="bi bi-globe"></i> </a> -->
+  <!--             <a href="https://www.linkedin.com/in/maarten-flippo" class="btn btn-outline-primary"> <i class="bi bi-linkedin"></i> </a> -->
+  <!--           </footer> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="carousel-item text-center p-4 container"> -->
+  <!--       <div class="row align-items-center"> -->
+  <!--         <div class="col-md-2"> -->
+  <!--           <img src="./landing_files/300"> -->
+  <!--         </div> -->
+  <!--         <div class="col"> -->
+  <!--           <p>AIDM good</p> -->
+  <!--           <h3>Dennis Sprokholt</h3> -->
+  <!--           <footer> -->
+  <!--             <p>PhD candidate, TU Delft</p> -->
+  <!--             <a href="https://dennis.life/" class="btn btn-outline-primary"> <i class="bi bi-globe"></i></a> -->
+  <!--           </footer> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="carousel-item text-center p-4 container"> -->
+  <!--       <div class="row align-items-center"> -->
+  <!--         <div class="col-md-2"> -->
+  <!--           <img src="./landing_files/300"> -->
+  <!--         </div> -->
+  <!--         <div class="col"> -->
+  <!--           <p>MSc thesis good</p> -->
+  <!--           <h3>Robin Jansen</h3> -->
+  <!--           <footer> -->
+  <!--             <p>MSc student, TU Delft</p> -->
+  <!--             <a href="https://linkedin.com/in/robin-jansen-7718a0183" class="btn btn-outline-primary"> <i class="bi bi-linkedin"></i></a> -->
+  <!--           </footer> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!--   <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev"> -->
+  <!--     <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+  <!--     <span class="visually-hidden">Previous</span> -->
+  <!--   </button> -->
+  <!--   <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next"> -->
+  <!--     <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+  <!--     <span class="visually-hidden">Next</span> -->
+  <!--   </button> -->
+  <!-- </div> -->
+  <!-- </main></div> -->
 
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter.enabled and site.footer_fixed %}
-      {% include scripts/newsletter.liquid center=true %}
-    {% endif %}
-  </article>
-</div>
+  <div class="container text-center">
+    <h2 class="display-4 text-center">How to find us?</h2>
+    <p>Our seminar sessions take place every Monday from 11:00 to 12:30 in the <a href="https://maps.app.goo.gl/s7ahUmpQ5AsymVWK7">Building 28</a> of the TU Delft campus, in the Hilbert meeting room on Floor 2.</p>
+  </div>
+</main>

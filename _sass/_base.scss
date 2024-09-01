@@ -3,6 +3,7 @@
  ******************************************************************************/
 
 // Typography
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 
 p,
 h1,
@@ -17,6 +18,11 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+
+  font-family: "Signika Negative", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 hr {
@@ -1303,4 +1309,38 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+div.session-list {
+  div.card {
+    margin: 1rem;
+  }
+
+  div.card-header {
+    text-align: center;
+  }
+
+  div.session-paper-review > div.card-header {
+    color: $white-color;
+    background-color: $green-color-dark;
+    border-color: $white-color;
+  }
+
+  div.session-brainstorm > div.card-header {
+    color: $white-color;
+    background-color: $yellow-color;
+    border-color: $white-color;
+  }
+
+  div.session-digest > div.card-header {
+    color: $white-color;
+    background-color: $purple-color;
+    border-color: $white-color;
+  }
+
+  div.session-research > div.card-header {
+    color: $white-color;
+    background-color: $orange-color;
+    border-color: $white-color;
+  }
 }
