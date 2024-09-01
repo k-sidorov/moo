@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://k-sidorov.github.io/moo/sitemap.xml
+Sitemap: https://www.m-o-o.org/sitemap.xml
