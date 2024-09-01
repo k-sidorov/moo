@@ -3,6 +3,16 @@ paper:
   css-class: session-paper-review
   icon-class: "fa-solid fa-book"
 
+tour:
+  display: A tour of...
+  css-class: session-tour
+  icon-class: "fa-solid fa-building-columns"
+
+tutorial:
+  display: Tutorial
+  css-class: session-tutorial
+  icon-class: "fa-solid fa-person-chalkboard"
+
 research:
   display: Ongoing research
   css-class: session-research
