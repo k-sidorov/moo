@@ -105,6 +105,10 @@ html[data-theme="dark"] {
   .repo-img-dark {
     display: block;
   }
+
+  .jumbotron {
+    background: $grey-color-dark;
+  }
 }
 
 html[data-theme-setting="dark"] {

@@ -1332,6 +1332,18 @@ div.session-list {
     border-color: $white-color;
   }
 
+  div.session-tour > div.card-header {
+    color: $white-color;
+    background-color: $brown-color;
+    border-color: $white-color;
+  }
+
+  div.session-tutorial > div.card-header {
+    color: $white-color;
+    background-color: $san-marino-color;
+    border-color: $white-color;
+  }
+
   div.session-digest > div.card-header {
     color: $white-color;
     background-color: $purple-color;

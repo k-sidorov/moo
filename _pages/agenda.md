@@ -12,7 +12,7 @@ nav_order: 3
 
 {% if sorted.size > 0 %}
 <div class="container session-list">
-    <div class="row row-cols-2">
+    <div class="row row-cols-md-2 row-cols-sm-1">
         {% for session in sorted %}
             {% assign session_type = site.data.session_types[session.session_type] %}
             <div class="col mb-4">
