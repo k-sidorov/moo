@@ -2,6 +2,7 @@
 layout: session
 title: Decomposition choices for column generation applied to large-scale urban multi-energy system models
 host: Maaike Elgersma
+host_ref: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/m-maaike-eigersma-msc
 session_type: research
 ---
 
