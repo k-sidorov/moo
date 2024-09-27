@@ -1,6 +1,6 @@
 ---
 layout: session
-title: Decision Diagrams for Industrial Scheduling​
+title: Safety Verification of Decision-Tree Policies in Continuous Time
 host: Anna Lukina
 host_ref: https://annalukina.com/
 session_type: research
